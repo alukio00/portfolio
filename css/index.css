@@ -1,0 +1,119 @@
+:root {
+    --my-color-dark: rgb(18, 18, 18);
+    --my-color-dark-2: rgb(30, 30, 30);
+    --my-color-yellow: rgb(255, 237, 0);
+}
+section {
+    padding: 20px;
+}
+
+#nav-bar a {
+    color: white;
+
+}
+#nav-bar a:hover {
+    color: var(--my-color-yellow);
+}
+
+.technology {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--my-color-dark-2);
+    width: 120px;
+    height: 120px;
+    transition-duration: 300ms;
+
+
+}
+.technology:hover {
+    scale: 1.1;
+    background-color: var(--my-color-yellow);
+}
+.technology:hover svg {
+    fill: var(--my-color-dark-2);
+}
+.technology:hover p {
+    color: var(--my-color-dark-2);
+}
+.technology p {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.technology svg {
+    fill: white;
+    
+    height: 40px;
+    width: 40px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: var(--my-color-dark-2);
+    width: 100%;
+}
+.project img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+    height: 200px;
+}
+.project .project-inner {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.project h3 {
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+}
+.p-info {
+    color: white;
+}
+.project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.project-technologies p {
+    padding: 2px 12px;
+    border-radius: 999px;
+    border-width: 1px;
+    border-style: solid;
+   
+}
+.blue {
+    border-color: blue;
+    color: blue;
+}
+.light-green {
+    border-color: greenyellow;
+    color: greenyellow;
+}
+.red {
+    border-color: red;
+    color: red;
+}
+.new-window-div {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.new-window-div svg {
+    width: 16px;
+    height: 16px;
+    fill: white;
+}
+.new-window-div p {
+    color: white;
+    text-decoration: underline;
+}
