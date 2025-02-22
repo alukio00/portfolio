@@ -8,23 +8,27 @@
     <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-<main class="flex flex-col gap-8 bg-my-color-dark">
-    <header class="fixed top-0 left-0 w-full backdrop-blur-sm bg-opacity-60 bg-my-color-dark flex gap-4 items-center p-4">
-        <h2 class="text-white text-xl w-60">Full Stack <span class="text-my-color-yellow">Developer</span></h2>
-        <nav id="nav-bar" class="flex gap-4 w-full max-w-1200 justify-end items-center">
-            <a href="/">Start</a>
-            <a href="/">Technologie</a>
-            <a href="/">Portfolio</a>
-            <a href="/">Kontakt</a>
-        </nav>
-    </header>
-    <section class="h-screen flex justify-center items-center flex-col">
 
-        <h1 class="text-6xl font-medium text-white text-center">Jestem Łukasz<br><span class="text-my-color-yellow">Full stack developer</span></h1>
+<header class="fixed top-0 left-0 w-full backdrop-blur-sm bg-opacity-60 bg-my-color-dark-2 flex max-md:hidden items-center p-4">
+    <h2 class="text-white text-xl w-60">Full Stack <span class="text-my-color-yellow">Developer</span></h2>
+    <nav id="nav-bar" class="flex gap-4 w-full max-w-1200 justify-end items-center">
+        <a href="/index.html#start">Start</a>
+        <a href="/index.html#technologie">Technologie</a>
+        <a href="/index.html#projekty">Portfolio</a>
+        <a href="/index.html#kontakt">Kontakt</a>
+    </nav>
+</header>
+
+<main class="flex flex-col gap-8 bg-my-color-dark">
+    
+    
+    <section id="start" class="h-screen flex justify-center items-center flex-col">
+
+        <h1 class="text-6xl max-sm:text-4xl font-medium text-white text-center">Jestem Łukasz<br><span class="text-my-color-yellow">Full stack developer</span></h1>
 
        
     </section>
-    <section class="my-10">
+    <section id="technologie">
         <div class="flex flex-col mx-auto w-full max-w-1000 gap-8">
             <h2 class="text-4xl text-white">Technologie</h2>
             <div class="flex flex-wrap gap-4 items-center justify-center">
@@ -80,12 +84,12 @@
             </div>
         </div>
     </section>
-    <section class="my-10">
+    <section id="projekty" class="mb-20">
         <div class="flex flex-col mx-auto w-full max-w-1000 gap-8">
             <h2 class="text-4xl text-white">Projekty</h2>
             <div class="flex gap-8 max-lg:flex-col max-lg:max-w-500 mx-auto w-full">
                 <div class="project">
-                    <img src="/img/e-korepetytor.png" alt="E-Korepetytor projekt">
+                    <img src="/img/e-korepetytor.webp" alt="E-Korepetytor projekt">
                     <div class="project-inner">
                         <h3>E-Korepetytor</h3>
                         
@@ -103,7 +107,7 @@
                     </div>
                 </div>
                 <div class="project">
-                    <img src="/img/cichy-zakatek.png" alt="Cichy zakątek projekt">
+                    <img src="/img/cichy-zakatek.webp" alt="Cichy zakątek projekt">
                     <div class="project-inner">
                         <h3>Cichy Zakątek</h3>
                         
@@ -113,14 +117,17 @@
                             <p class="light-green">Javascript</p>
                             <p class="blue">Tailwind</p>
                         </div>
-                        <a target="_blank" href="https://cichyzakatek.com.pl" class="new-window-div">
-                            <p>Otwórz</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve"><g><path d="M48.7,2H29.6C28.8,2,28,2.5,28,3.3v3C28,7.1,28.7,8,29.6,8h7.9c0.9,0,1.4,1,0.7,1.6l-17,17   c-0.6,0.6-0.6,1.5,0,2.1l2.1,2.1c0.6,0.6,1.5,0.6,2.1,0l17-17c0.6-0.6,1.6-0.2,1.6,0.7v7.9c0,0.8,0.8,1.7,1.6,1.7h2.9   c0.8,0,1.5-0.9,1.5-1.7v-19C50,2.5,49.5,2,48.7,2z"/><path d="M36.3,25.5L32.9,29c-0.6,0.6-0.9,1.3-0.9,2.1v11.4c0,0.8-0.7,1.5-1.5,1.5h-21C8.7,44,8,43.3,8,42.5v-21   C8,20.7,8.7,20,9.5,20H21c0.8,0,1.6-0.3,2.1-0.9l3.4-3.4c0.6-0.6,0.2-1.7-0.7-1.7H6c-2.2,0-4,1.8-4,4v28c0,2.2,1.8,4,4,4h28   c2.2,0,4-1.8,4-4V26.2C38,25.3,36.9,24.9,36.3,25.5z"/></g></svg>
-                        </a>
+                        <div class="flex justify-between">
+                            <a target="_blank" href="https://cichyzakatek.com.pl" class="new-window-div">
+                                <p>Otwórz</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve"><g><path d="M48.7,2H29.6C28.8,2,28,2.5,28,3.3v3C28,7.1,28.7,8,29.6,8h7.9c0.9,0,1.4,1,0.7,1.6l-17,17   c-0.6,0.6-0.6,1.5,0,2.1l2.1,2.1c0.6,0.6,1.5,0.6,2.1,0l17-17c0.6-0.6,1.6-0.2,1.6,0.7v7.9c0,0.8,0.8,1.7,1.6,1.7h2.9   c0.8,0,1.5-0.9,1.5-1.7v-19C50,2.5,49.5,2,48.7,2z"/><path d="M36.3,25.5L32.9,29c-0.6,0.6-0.9,1.3-0.9,2.1v11.4c0,0.8-0.7,1.5-1.5,1.5h-21C8.7,44,8,43.3,8,42.5v-21   C8,20.7,8.7,20,9.5,20H21c0.8,0,1.6-0.3,2.1-0.9l3.4-3.4c0.6-0.6,0.2-1.7-0.7-1.7H6c-2.2,0-4,1.8-4,4v28c0,2.2,1.8,4,4,4h28   c2.2,0,4-1.8,4-4V26.2C38,25.3,36.9,24.9,36.3,25.5z"/></g></svg>
+                            </a>
+                            <a class="github-link" target="_blank" href="https://github.com/alukio00/alukio00.github.io">Github</a>
+                        </div>
                     </div>
                 </div>
                 <div class="project">
-                    <img src="/img/cichy-zakatek.png" alt="Tic Tac Toe projekt">
+                    <img src="/img/tic-tac-toe.webp" alt="Tic Tac Toe projekt">
                     <div class="project-inner">
                         <h3>Tic Tac Toe</h3>
                         
@@ -130,7 +137,7 @@
                             <p class="blue">Socket io</p>
                             <p class="blue">Tailwind</p>
                         </div>
-
+                        <a class="github-link" target="_blank" href="https://github.com/alukio00/tic-tac-toe">Github</a>
                     </div>
                 </div>
             </div>
@@ -138,6 +145,18 @@
         </div>
         
     </section>
+
 </main>
+
+<footer id="kontakt" class="bg-my-color-dark-2 p-5">
+    <div class="mx-auto w-full max-w-1000 flex flex-col gap-4">
+        <h2 class="text-4xl text-white">Kontakt</h2>
+        <div class="flex flex-col gap-4">
+            <p class="text-white text-xl"><strong>Mail:</strong> lukaszates2007@gmail.com</p>
+            <p class="text-white text-xl"><strong>Tel:</strong> +48 504 644 362</p>
+        </div>
+</div>
+</footer>
+
 </body>
 </html>

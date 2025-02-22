@@ -6,6 +6,11 @@
 section {
     padding: 20px;
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+    
+}
 
 #nav-bar a {
     color: white;
@@ -90,6 +95,11 @@ section {
     border-width: 1px;
     border-style: solid;
    
+}
+.github-link {
+    color: white;
+    text-align: end;
+    text-decoration: underline;
 }
 .blue {
     border-color: blue;
