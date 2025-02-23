@@ -11,6 +11,20 @@ html {
     scroll-padding-top: 70px;
     
 }
+h2 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 500
+}
+.main-div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    gap: 52px;
+}
 
 #nav-bar a {
     color: white;
@@ -126,4 +140,114 @@ html {
 .new-window-div p {
     color: white;
     text-decoration: underline;
+}
+.oferta {
+    padding: 20px;
+    background-color: var(--my-color-dark-2);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 700px;
+}
+.oferta h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+.oferta-checkboxs {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.oferta-checkboxs div {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: white;
+}
+.oferta-checkboxs div svg {
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+    border-radius: 999px;
+    fill: var(--my-color-yellow);
+    background-color: var(--my-color-dark);
+}
+.price {
+    color: var(--my-color-yellow);
+    font-weight: 700;
+    font-size: 24px;
+}
+.opis {
+    color: rgb(156 163 175);
+}
+.oferta-opis {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: calc(100% - 76px);
+}
+.oferta-inner {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.oferta-inner svg {
+    fill: var(--my-color-yellow);
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    background-color: var(--my-color-dark);
+    border-radius: 8px;
+}
+.wybierz-btn {
+    color: var(--my-color-dark);
+    background-color: var(--my-color-yellow);
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    transition-duration: 200ms;
+    border: 2px solid var(--my-color-yellow);
+}
+.wybierz-btn:hover {
+    color: var(--my-color-yellow);
+    background-color: var(--my-color-dark);
+
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    background-color: var(--my-color-dark);
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+}
+.contact-info h3 {
+    font-size: 24px;
+    color: white;
+
+}
+.contact-info p {
+    color: rgb(156 163 175);
+}
+.contact-info a {
+    padding: 8px 16px;
+    border-radius: 12px;
+    color: var(--my-color-yellow);
+    border: 2px solid var(--my-color-yellow);
+    
+}
+.contact-info svg {
+    width: 45px;
+    height: 45px;
+    
+    
 }
