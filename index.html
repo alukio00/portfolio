@@ -3,263 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Łukasz Ates Portfolio</title>
+    <meta name="description" content="Jestem łukasz, full stack developer. Specjalizuje się tworzeniem aplikacji full stack z Node js.">
+    <link rel="canonical" href="https://lukasz-ates.com">
+    <link rel="icon" href="/img/favicon.svg">
+
+    <link rel="preload" href="/css/output.css" as="style">
+    <link rel="preload" href="/css/index.css" as="style">
+
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
 
 <header class="fixed top-0 left-0 w-full backdrop-blur-sm bg-opacity-60 bg-my-color-dark-2 flex max-md:hidden items-center p-4">
-    <h2 class="text-white text-xl w-60">Full Stack <span class="text-my-color-yellow">Developer</span></h2>
-    <nav id="nav-bar" class="flex gap-4 w-full max-w-1200 justify-end items-center">
-        <a href="/index.html#start">Start</a>
-        <a href="/index.html#oferta">Oferta</a>
-        <a href="/index.html#technologie">Technologie</a>
-        <a href="/index.html#projekty">Portfolio</a>
-        <a href="/index.html#kontakt">Kontakt</a>
-    </nav>
+    <div class="flex justify-between gap-2 w-full mx-auto max-w-1200">
+        <h2 class="text-white text-start text-xl min-w-60">Full Stack <span class="text-my-color-yellow">Developer</span></h2>
+        <nav id="nav-bar" class="flex gap-4 w-full max-w-1200 justify-end items-center">
+            <a href="/#start">Start</a>
+            <a href="/#projekty">Portfolio</a>
+            <a href="/#technologie">Technologie</a>
+            <a href="/#oferta">Oferta</a>
+            <a href="/#kontakt">Kontakt</a>
+        </nav>
+    </div>
+    
 </header>
 
 <main class="flex flex-col gap-14 bg-my-color-dark">
     
     
     <section id="start" class="h-screen flex justify-center items-center flex-col">
+        <div class="main-div max-md:!gap-4">
+            <h1 class="text-6xl max-sm:text-4xl font-medium max-md:text-center text-white">Jestem Łukasz<br><span class="text-my-color-yellow">Full Stack Developer</span></h1>
+            <p class="text-white text-xl max-md:text-center max-md:text-lg max-w-800">
+                Specjalizuje się w tworzeniu aplikacji full stack z Node js. <br><br>
+                Mam kilkuletnie doświadczenie w programowaniu i tworzeniu stron internetowych.
+                Moja praca jest dokładna i jakościowa. Zawsze dbam o klienta i mu pomagam we wszystkim.
 
-        <h1 class="text-6xl max-sm:text-4xl font-medium text-white text-center">Jestem Łukasz<br><span class="text-my-color-yellow">Full stack developer</span></h1>
+
+            </p>
+            <a class="text-my-color-dark px-5 py-2 bg-my-color-yellow mr-auto font-medium text-lg max-md:mx-auto rounded-full" href="/#projekty">Zobacz portfolio</a>
+        </div>
+        
 
        
     </section>
-    <section id="oferta">
+    <section id="projekty">
         <div class="main-div">
-            <h2>Oferta</h2>
-            <div class="flex w-full gap-8 items-start max-xl:flex-col max-xl:items-center justify-center">
-                <div class="oferta">
-                    <div class="oferta-inner">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" ><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-480H200v480Zm80-280v-80h400v80H280Zm0 160v-80h240v80H280Z"/></svg>
-                        <div class="oferta-opis">
-                            <h3>Landing page</h3>
-                            <p class="opis">Prosta strona, idealna jako wizytówka dla biznesu lub portfolio.</p>
-                        </div>
+            <h2>Projekty</h2>
+            <div class="flex gap-8 max-xl:flex-col items-start max-xl:items-center max-xl:max-w-500 mx-auto w-full">
+                <div class="project">
+                    <div class="flex h-[200px] rounded-t-xl items-center justify-center gap-2 bg-white">
+                        <img class="w-20 max-sm:w-12 -mb-2" alt="E-Korepetytor Logo" src="/img/logo-xs.png">
+                        <p class="text-4xl max-sm:text-3xl">E-Korepetytor.pl</p>
                     </div>
-                    <p class="price">1000 PLN</p>
-                    <div class="oferta-checkboxs">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Ładny, nowoczesny i responsywny Design
+                    <div class="project-inner">
+                        <a target="_blank" href="https://e-korepetytor.com.pl">
+                            <h3>E-Korepetytor</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve"><g><path d="M48.7,2H29.6C28.8,2,28,2.5,28,3.3v3C28,7.1,28.7,8,29.6,8h7.9c0.9,0,1.4,1,0.7,1.6l-17,17   c-0.6,0.6-0.6,1.5,0,2.1l2.1,2.1c0.6,0.6,1.5,0.6,2.1,0l17-17c0.6-0.6,1.6-0.2,1.6,0.7v7.9c0,0.8,0.8,1.7,1.6,1.7h2.9   c0.8,0,1.5-0.9,1.5-1.7v-19C50,2.5,49.5,2,48.7,2z"/><path d="M36.3,25.5L32.9,29c-0.6,0.6-0.9,1.3-0.9,2.1v11.4c0,0.8-0.7,1.5-1.5,1.5h-21C8.7,44,8,43.3,8,42.5v-21   C8,20.7,8.7,20,9.5,20H21c0.8,0,1.6-0.3,2.1-0.9l3.4-3.4c0.6-0.6,0.2-1.7-0.7-1.7H6c-2.2,0-4,1.8-4,4v28c0,2.2,1.8,4,4,4h28   c2.2,0,4-1.8,4-4V26.2C38,25.3,36.9,24.9,36.3,25.5z"/></g></svg>
+                        </a>
+                        
+                        <p class="text-white">
+                            Jest to rozbudowana platforma edukacyjna z ogłoszeniami korepetycji. Frontend został stworzony z plain js, backend z Node js, a serwer to AWS EC2. 
+                        </p>
+                        <div class="project-technologies">
+                            <p class="light-green">Node js</p>
+                            <p class="blue">MySQL</p>
+                            <p class="red">Redis</p>
+                            <p class="light-green">AWS</p>
+                            <p class="blue">Tailwind</p>
                         </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Certyfikat SSL
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Zarządzanie hostingiem
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Optymalizacja SEO
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Optymalizacja prędkości
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Forma kontaktowa
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Roczne wsparcie techniczne
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            100% Satysfakcji
-                        </div>
-                    
+                        
+                        
                     </div>
-                    <a href="/index.html#kontakt" class="wybierz-btn">Wybierz</a>
                 </div>
-                <div class="oferta">
-                    <div class="oferta-inner">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"/></svg>
-                        <div class="oferta-opis">
-                            <h3>Strona internetowa</h3>
-                            <p class="opis">Strona aż do 6 zakładek, idealna jako strona firmy lub blog.</p>
+                <div class="project">
+                    <div class="flex h-[200px] rounded-t-xl items-center justify-center gap-4 bg-white">
+                        <img alt="Cichy zakątek logo" class="w-20 max-sm:w-14 -mb-2 rounded-full" src="/img/cichy-zakatek.webp">
+                        <p class="text-4xl max-sm:text-3xl">Cichy Zakątek</p>
+                    </div>
+                    <div class="project-inner">
+                        <a target="_blank" href="https://cichyzakatek.com.pl">
+                            <h3>Cichy Zakątek</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve"><g><path d="M48.7,2H29.6C28.8,2,28,2.5,28,3.3v3C28,7.1,28.7,8,29.6,8h7.9c0.9,0,1.4,1,0.7,1.6l-17,17   c-0.6,0.6-0.6,1.5,0,2.1l2.1,2.1c0.6,0.6,1.5,0.6,2.1,0l17-17c0.6-0.6,1.6-0.2,1.6,0.7v7.9c0,0.8,0.8,1.7,1.6,1.7h2.9   c0.8,0,1.5-0.9,1.5-1.7v-19C50,2.5,49.5,2,48.7,2z"/><path d="M36.3,25.5L32.9,29c-0.6,0.6-0.9,1.3-0.9,2.1v11.4c0,0.8-0.7,1.5-1.5,1.5h-21C8.7,44,8,43.3,8,42.5v-21   C8,20.7,8.7,20,9.5,20H21c0.8,0,1.6-0.3,2.1-0.9l3.4-3.4c0.6-0.6,0.2-1.7-0.7-1.7H6c-2.2,0-4,1.8-4,4v28c0,2.2,1.8,4,4,4h28   c2.2,0,4-1.8,4-4V26.2C38,25.3,36.9,24.9,36.3,25.5z"/></g></svg>
+                        </a>
+                        
+                        <p class="text-white">
+                            Strona apartamentów do wynajęcia z listą atrakcji i tras rowerowych w okolicy Kudowy-Zdrój.
+                        </p>
+                        <div class="project-technologies">
+                            <p class="red">Html</p>
+                            <p class="blue">Css</p>
+                            <p class="light-green">Javascript</p>
+                            <p class="blue">Tailwind</p>
                         </div>
                     </div>
-                    <p class="price">1500 PLN</p>
-                    <div class="oferta-checkboxs">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Ładny, nowoczesny i responsywny Design
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Certyfikat SSL
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Zarządzanie hostingiem
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Zaawansowane SEO
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Szybkie ładowanie
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Dodatkowe funkcje (np. rezerwacja)
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Roczne wsparcie techniczne
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            100% Satysfakcji
-                        </div>
-                    
-                    </div>
-                    <a href="/index.html#kontakt" class="wybierz-btn">Wybierz</a>
                 </div>
-                <div class="oferta">
-                    <div class="oferta-inner">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" ><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-480H200v480Zm80-280v-80h400v80H280Zm0 160v-80h240v80H280Z"/></svg>
-                        <div class="oferta-opis">
-                            <h3>Blog / Forum</h3>
-                            <p class="opis">Strona z systemem zarządania treśćmi, np forum internetowe.</p>
-                        </div>
+                <div class="project">
+                    <div class="flex h-[200px] rounded-t-xl items-center justify-center gap-4 bg-slate-900">
+                        <svg class="w-16" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                        
+                            <line x1="100" y1="0" x2="100" y2="300" stroke="white" stroke-width="8" />
+                       
+                            <line x1="200" y1="0" x2="200" y2="300" stroke="white" stroke-width="8" />
+                        
+                            <line x1="0" y1="100" x2="300" y2="100" stroke="white" stroke-width="8" />
+                         
+                            <line x1="0" y1="200" x2="300" y2="200" stroke="white" stroke-width="8" />
+                            
+                   
+                            <circle cx="150" cy="150" r="35" stroke="blue" stroke-width="8" fill="none" />
+             
+                            <line x1="15" y1="15" x2="85" y2="85" stroke="red" stroke-width="8" />
+                            <line x1="85" y1="15" x2="15" y2="85" stroke="red" stroke-width="8" />
+                            
+                
+                            <line x1="215" y1="215" x2="285" y2="285" stroke="red" stroke-width="8" />
+                            <line x1="285" y1="215" x2="215" y2="285" stroke="red" stroke-width="8" />
+                        </svg>
+                        <p class="text-4xl max-sm:text-3xl text-white">Tic Tac Toe</p>
                     </div>
-                    <p class="price">2500 PLN</p>
-                    <div class="oferta-checkboxs">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Dodawanie artykułów
+                    <div class="project-inner">
+                        <a target="_blank" href="https://github.com/alukio00/tic-tac-toe">
+                            <h3>Tic Tac Toe</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve"><g><path d="M48.7,2H29.6C28.8,2,28,2.5,28,3.3v3C28,7.1,28.7,8,29.6,8h7.9c0.9,0,1.4,1,0.7,1.6l-17,17   c-0.6,0.6-0.6,1.5,0,2.1l2.1,2.1c0.6,0.6,1.5,0.6,2.1,0l17-17c0.6-0.6,1.6-0.2,1.6,0.7v7.9c0,0.8,0.8,1.7,1.6,1.7h2.9   c0.8,0,1.5-0.9,1.5-1.7v-19C50,2.5,49.5,2,48.7,2z"/><path d="M36.3,25.5L32.9,29c-0.6,0.6-0.9,1.3-0.9,2.1v11.4c0,0.8-0.7,1.5-1.5,1.5h-21C8.7,44,8,43.3,8,42.5v-21   C8,20.7,8.7,20,9.5,20H21c0.8,0,1.6-0.3,2.1-0.9l3.4-3.4c0.6-0.6,0.2-1.7-0.7-1.7H6c-2.2,0-4,1.8-4,4v28c0,2.2,1.8,4,4,4h28   c2.2,0,4-1.8,4-4V26.2C38,25.3,36.9,24.9,36.3,25.5z"/></g></svg>
+                        </a>
+                        
+                        <p class="text-white">
+                            Strona do grania w kółko i krzyżyk online. Można zapraszać innych do gry, lub automatycznie ją znaleźć. System opiera się na Socket io i redis.
+                        </p>
+                        <div class="project-technologies">
+                            <p class="light-green">Node</p>
+                            <p class="red">Angular</p>
+                            <p class="blue">Docker</p>
+                            <p class="blue">Socket io</p>
+                            <p class="blue">Tailwind</p>
                         </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            System zarządzania
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Rejestracja użytkowników
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Zarządanie hostingiem
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Zaawansowane SEO
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Szybkie ładowanie
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Roczne wsparcie techniczne
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            100% Satysfakcji
-                        </div>
-                    
+                        
                     </div>
-                    <a href="/index.html#kontakt" class="wybierz-btn">Wybierz</a>
                 </div>
             </div>
-            <div class="flex w-full gap-8 items-start max-xl:flex-col max-xl:items-center justify-center max-w-1000 mx-auto">
-                <div class="oferta">
-                    <div class="oferta-inner">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" ><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-480H200v480Zm80-280v-80h400v80H280Zm0 160v-80h240v80H280Z"/></svg>
-                        <div class="oferta-opis">
-                            <h3>Sklep internetowy</h3>
-                            <p class="opis">Sklep internetowy dla twojego biznesu.</p>
-                        </div>
-                    </div>
-                    <p class="price">3000 PLN</p>
-                    <div class="oferta-checkboxs">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Katalog produktów
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            System filtrowania produktów
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Płatności Online
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Zarządzanie hostingiem
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Zaawansowane SEO
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Szybkie ładowanie
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Roczne wsparcie techniczne
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            100% Satysfakcji
-                        </div>
-                    
-                    </div>
-                    <a href="/index.html#kontakt" class="wybierz-btn">Wybierz</a>
-                </div>
-                <div class="oferta">
-                    <div class="oferta-inner">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"/></svg>
-                        <div class="oferta-opis">
-                            <h3>Enterprise</h3>
-                            <p class="opis">Opcja dla większych zleceń lub wymagających dodatkowych funkcji.</p>
-                        </div>
-                    </div>
-                    <p class="price">Do uzgodnienia</p>
-                    <div class="oferta-checkboxs">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Projektowanie UX/UI
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Integracja API
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Zarządanie serwerem
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Priorytetowa realizacja
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            Długoterminowe wsparcie techniczne
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            100% Satysfakcji
-                        </div>
-                    
-                    </div>
-                    <a href="/index.html#kontakt" class="wybierz-btn">Wybierz</a>
-                </div>
-
-            </div>
+            
         </div>
+        
     </section>
     <section id="technologie">
         <div class="main-div">
@@ -317,77 +204,207 @@
             </div>
         </div>
     </section>
-    <section id="projekty" class="mb-20">
+    <section class="mb-20" id="oferta">
         <div class="main-div">
-            <h2>Projekty</h2>
-            <div class="flex gap-8 max-lg:flex-col items-start max-lg:items-center max-lg:max-w-500 mx-auto w-full">
-                <div class="project">
-                    <img src="/img/e-korepetytor.webp" alt="E-Korepetytor projekt">
-                    <div class="project-inner">
-                        <h3>E-Korepetytor</h3>
-                        
-                        <div class="project-technologies">
-                            <p class="light-green">Node js</p>
-                            <p class="blue">MySQL</p>
-                            <p class="red">Redis</p>
-                            <p class="light-green">AWS</p>
-                            <p class="blue">Tailwind</p>
+            <h2>Oferta</h2>
+            <div class="flex flex-col gap-8 items-center justify-center">
+                <div class="flex w-full gap-8 items-start max-lg:flex-col max-lg:items-center justify-center max-w-1000 mx-auto">
+                    <div class="oferta">
+                        <div class="oferta-inner">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" ><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-480H200v480Zm80-280v-80h400v80H280Zm0 160v-80h240v80H280Z"/></svg>
+                            <div class="oferta-opis">
+                                <h3>Landing page</h3>
+                                <p class="opis">Prosta strona, idealna jako wizytówka dla biznesu lub portfolio.</p>
+                            </div>
                         </div>
-                        <a target="_blank" href="https://e-korepetytor.com.pl" class="new-window-div">
-                            <p>Otwórz</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve"><g><path d="M48.7,2H29.6C28.8,2,28,2.5,28,3.3v3C28,7.1,28.7,8,29.6,8h7.9c0.9,0,1.4,1,0.7,1.6l-17,17   c-0.6,0.6-0.6,1.5,0,2.1l2.1,2.1c0.6,0.6,1.5,0.6,2.1,0l17-17c0.6-0.6,1.6-0.2,1.6,0.7v7.9c0,0.8,0.8,1.7,1.6,1.7h2.9   c0.8,0,1.5-0.9,1.5-1.7v-19C50,2.5,49.5,2,48.7,2z"/><path d="M36.3,25.5L32.9,29c-0.6,0.6-0.9,1.3-0.9,2.1v11.4c0,0.8-0.7,1.5-1.5,1.5h-21C8.7,44,8,43.3,8,42.5v-21   C8,20.7,8.7,20,9.5,20H21c0.8,0,1.6-0.3,2.1-0.9l3.4-3.4c0.6-0.6,0.2-1.7-0.7-1.7H6c-2.2,0-4,1.8-4,4v28c0,2.2,1.8,4,4,4h28   c2.2,0,4-1.8,4-4V26.2C38,25.3,36.9,24.9,36.3,25.5z"/></g></svg>
-                        </a>
+                        <p class="price">1000 PLN</p>
+                        <div class="oferta-checkboxs">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Ładny, nowoczesny i responsywny Design
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Certyfikat SSL
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Zarządzanie hostingiem
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Optymalizacja SEO
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Optymalizacja prędkości
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Forma kontaktowa
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Roczne wsparcie techniczne
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                100% Satysfakcji
+                            </div>
+                        
+                        </div>
+                        <a href="/#kontakt" class="wybierz-btn">Wybierz</a>
                     </div>
+                    <div class="oferta">
+                        <div class="oferta-inner">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"/></svg>
+                            <div class="oferta-opis">
+                                <h3>Strona internetowa</h3>
+                                <p class="opis">Strona aż do 6 zakładek, idealna jako strona firmy lub blog.</p>
+                            </div>
+                        </div>
+                        <p class="price">1500 PLN</p>
+                        <div class="oferta-checkboxs">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Ładny, nowoczesny i responsywny Design
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Certyfikat SSL
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Zarządzanie hostingiem
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Zaawansowane SEO
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Szybkie ładowanie
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Dodatkowe funkcje (np. rezerwacja)
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Roczne wsparcie techniczne
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                100% Satysfakcji
+                            </div>
+                        
+                        </div>
+                        <a href="/#kontakt" class="wybierz-btn">Wybierz</a>
+                    </div>
+                
                 </div>
-                <div class="project">
-                    <img src="/img/cichy-zakatek.webp" alt="Cichy zakątek projekt">
-                    <div class="project-inner">
-                        <h3>Cichy Zakątek</h3>
+                <div class="flex w-full gap-8 items-start max-lg:flex-col max-lg:items-center justify-center max-w-1000 mx-auto">
+                    <div class="oferta">
+                        <div class="oferta-inner">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+                             <div class="oferta-opis">
+                                <h3>Sklep internetowy</h3>
+                                <p class="opis">Sklep internetowy dla twojego biznesu.</p>
+                            </div>
+                        </div>
+                        <p class="price">3000 PLN</p>
+                        <div class="oferta-checkboxs">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Katalog produktów
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                System filtrowania produktów
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Płatności Online
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Zarządzanie hostingiem
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Zaawansowane SEO
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Szybkie ładowanie
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Roczne wsparcie techniczne
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                100% Satysfakcji
+                            </div>
                         
-                        <div class="project-technologies">
-                            <p class="red">Html</p>
-                            <p class="blue">Css</p>
-                            <p class="light-green">Javascript</p>
-                            <p class="blue">Tailwind</p>
                         </div>
-                        <div class="flex justify-between">
-                            <a target="_blank" href="https://cichyzakatek.com.pl" class="new-window-div">
-                                <p>Otwórz</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve"><g><path d="M48.7,2H29.6C28.8,2,28,2.5,28,3.3v3C28,7.1,28.7,8,29.6,8h7.9c0.9,0,1.4,1,0.7,1.6l-17,17   c-0.6,0.6-0.6,1.5,0,2.1l2.1,2.1c0.6,0.6,1.5,0.6,2.1,0l17-17c0.6-0.6,1.6-0.2,1.6,0.7v7.9c0,0.8,0.8,1.7,1.6,1.7h2.9   c0.8,0,1.5-0.9,1.5-1.7v-19C50,2.5,49.5,2,48.7,2z"/><path d="M36.3,25.5L32.9,29c-0.6,0.6-0.9,1.3-0.9,2.1v11.4c0,0.8-0.7,1.5-1.5,1.5h-21C8.7,44,8,43.3,8,42.5v-21   C8,20.7,8.7,20,9.5,20H21c0.8,0,1.6-0.3,2.1-0.9l3.4-3.4c0.6-0.6,0.2-1.7-0.7-1.7H6c-2.2,0-4,1.8-4,4v28c0,2.2,1.8,4,4,4h28   c2.2,0,4-1.8,4-4V26.2C38,25.3,36.9,24.9,36.3,25.5z"/></g></svg>
-                            </a>
-                            <a class="github-link" target="_blank" href="https://github.com/alukio00/alukio00.github.io">Github</a>
-                        </div>
+                        <a href="/#kontakt" class="wybierz-btn">Wybierz</a>
                     </div>
-                </div>
-                <div class="project">
-                    <img src="/img/tic-tac-toe.webp" alt="Tic Tac Toe projekt">
-                    <div class="project-inner">
-                        <h3>Tic Tac Toe</h3>
+                    <div class="oferta">
+                        <div class="oferta-inner">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/></svg>
+                            <div class="oferta-opis">
+                                <h3>Enterprise</h3>
+                                <p class="opis">Opcja dla większych zleceń lub wymagających dodatkowych funkcji.</p>
+                            </div>
+                        </div>
+                        <p class="price">Do uzgodnienia</p>
+                        <div class="oferta-checkboxs">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Projektowanie UX/UI
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Integracja API
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Zarządanie serwerem
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Priorytetowa realizacja
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                Długoterminowe wsparcie techniczne
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                100% Satysfakcji
+                            </div>
                         
-                        <div class="project-technologies">
-                            <p class="red">Angular</p>
-                            <p class="blue">Docker</p>
-                            <p class="blue">Socket io</p>
-                            <p class="blue">Tailwind</p>
                         </div>
-                        <a class="github-link" target="_blank" href="https://github.com/alukio00/tic-tac-toe">Github</a>
+                        <a href="/#kontakt" class="wybierz-btn">Wybierz</a>
                     </div>
+
                 </div>
             </div>
-            
         </div>
-        
     </section>
+    
+    
 
 </main>
 
 <footer id="kontakt" class="bg-my-color-dark-2 px-5 pt-10 pb-20">
-    <div class="mx-auto w-full max-w-1000 flex flex-col gap-8">
+    <div class="mx-auto w-full max-w-1000 flex flex-col gap-12">
         <h2>Kontakt</h2>
         <div class="flex gap-8 items-start justify-center w-full max-md:flex-col mx-auto max-md:max-w-500 max-md:items-center">
 
             <div class="contact-info">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: blue;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: red;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                 <h3>Telefon</h3>
                 <p>+48 504 644 362</p>
                 <a href="tel:+48504644362">Zadzwoń</a>
@@ -395,7 +412,7 @@
 
 
             <div class="contact-info">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: red;"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: blue;"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
                 <h3>Email</h3>
                 <p>lukaszates2007@gmail.com</p>
                 <a href="mailto:lukaszates2007@gmail.com">Napisz wiadomość</a>

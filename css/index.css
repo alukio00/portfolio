@@ -77,23 +77,33 @@ h2 {
     border-radius: 12px;
     background-color: var(--my-color-dark-2);
     width: 100%;
+    transition-duration: 200ms;
 }
-.project img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 12px 12px 0px 0px;
-    height: 200px;
+.project:hover {
+    box-shadow: 6px 6px 20px 5px black;
+    scale: 1.02;
 }
+
 .project .project-inner {
     padding: 16px;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-.project h3 {
+.project-inner h3 {
     font-size: 24px;
     color: white;
     font-weight: 500;
+}
+.project-inner a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-inner svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
 }
 .p-info {
     color: white;
@@ -110,11 +120,6 @@ h2 {
     border-style: solid;
    
 }
-.github-link {
-    color: white;
-    text-align: end;
-    text-decoration: underline;
-}
 .blue {
     border-color: blue;
     color: blue;
@@ -127,20 +132,7 @@ h2 {
     border-color: red;
     color: red;
 }
-.new-window-div {
-    display: flex;
-    gap: 4px;
-    align-items: center;
-}
-.new-window-div svg {
-    width: 16px;
-    height: 16px;
-    fill: white;
-}
-.new-window-div p {
-    color: white;
-    text-decoration: underline;
-}
+
 .oferta {
     padding: 20px;
     background-color: var(--my-color-dark-2);
@@ -187,7 +179,7 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: calc(100% - 76px);
+    width: calc(100% - 81px);
 }
 .oferta-inner {
     display: flex;
@@ -196,9 +188,9 @@ h2 {
 }
 .oferta-inner svg {
     fill: var(--my-color-yellow);
-    width: 60px;
-    height: 60px;
-    padding: 8px;
+    width: 65px;
+    height: 65px;
+    padding: 10px;
     background-color: var(--my-color-dark);
     border-radius: 8px;
 }
@@ -229,6 +221,7 @@ h2 {
     border-radius: 12px;
     padding: 20px;
     width: 100%;
+    box-shadow: 5px 5px 20px var(--my-color-dark);
 }
 .contact-info h3 {
     font-size: 24px;
@@ -243,8 +236,9 @@ h2 {
     border-radius: 12px;
     color: var(--my-color-yellow);
     border: 2px solid var(--my-color-yellow);
-    
+    font-weight: 500;
 }
+
 .contact-info svg {
     width: 45px;
     height: 45px;
