@@ -1,7 +1,7 @@
 :root {
-    --my-color-dark: rgb(18, 18, 18);
+    --my-color-dark: #121212;
     --my-color-dark-2: rgb(30, 30, 30);
-    --my-color-yellow: rgb(255, 237, 0);
+    --my-color-yellow: #ffed00;
 }
 section {
     padding: 20px;
